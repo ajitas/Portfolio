@@ -1,0 +1,102 @@
+body {
+    background: url("https://juegosrev.com/wp-content/uploads/2017/06/White-HD-Wallpapers-1080p-Gallery-79-Plus-PIC-WPW40187.jpg") fixed;
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    background:black;
+    padding:2%;
+    position:fixed;
+    top:0%;
+    left:0%;
+    z-index:1;
+}
+.header-name {
+    color:white;
+    text-align:center;
+}
+
+.header-tab {
+    padding-top:3%;
+}
+.nav-pills .nav-link.active{
+    background-color:black;
+    color:white;
+    box-shadow:3px 3px 5px white;
+}
+.nav-link {
+    color:white;
+}
+.nav-item:hover {
+    background-color:white;
+    color:black;
+    box-shadow:3px 3px 5px white;
+}
+#profile-picture {
+    float:left;
+    height:auto;
+    width:20%;
+    padding-right:2%;
+}
+#profile-area {
+    position:absolute;
+    margin-top:20%;
+    color:white;
+    background:black;
+}
+#button-area {
+    background:black;
+    position:fixed;
+    left:2%;
+    top:20%;
+    height:100%;
+    margin-top:2%;
+}
+#project-area {
+    position:absolute;
+    margin-left:30%;
+    margin-top:15%;
+    color:white;
+
+}
+.topic-button {
+    background-color:black;
+    color:white;
+    box-shadow:3px 3px 5px white;
+    padding:1%;
+    margin:4%;
+}
+.portfolio-wrapper {
+    display:none;
+}
+.contact-nav {
+    height:30px;
+    width:30px;
+    margin:2%;
+}
+.contact-tab {
+    padding-top:3%;
+}
+
+.topic-button:hover {
+    cursor:pointer;
+    background:white;
+    color:black;
+}
+
+.project-div {
+    margin:2%;
+    margin-bottom:5%;
+}
+
+.project-title {
+    color:white;
+    background:black;
+    text-shadow:1px 1px 2px white;
+    padding-top:2%;
+    padding-bottom:1%;
+}
+.project-image {
+    margin-bottom:2%;
+}
+
+
