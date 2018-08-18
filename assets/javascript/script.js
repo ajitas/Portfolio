@@ -90,17 +90,16 @@ $(document).ready(function(){
             }
         }
     }
+    
+    $(".about-wrapper").addClass("load");
     $(".nav-link").on("click",function(){
-        $(".nav-link").removeClass("active");
-        $(this).addClass("active");
-
         if($(this).attr("id") === "about-nav"){
-            $(".about-wrapper").show();
-            $(".portfolio-wrapper").hide();
+            $(".about-wrapper").addClass("load");
+            $(".portfolio-wrapper").removeClass("load");
         }
         else if($(this).attr("id") === "portfolio-nav"){
-            $(".about-wrapper").hide();
-            $(".portfolio-wrapper").show();
+            $(".about-wrapper").removeClass("load");
+            $(".portfolio-wrapper").addClass("load");
             showTopicTagButtons();
             loadAllProjects();
 

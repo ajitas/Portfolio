@@ -1,6 +1,8 @@
 body {
-    background: url("https://juegosrev.com/wp-content/uploads/2017/06/White-HD-Wallpapers-1080p-Gallery-79-Plus-PIC-WPW40187.jpg") fixed;
+   /* background: url("https://juegosrev.com/wp-content/uploads/2017/06/White-HD-Wallpapers-1080p-Gallery-79-Plus-PIC-WPW40187.jpg") fixed;*/
     font-family: 'Open Sans', sans-serif;
+    background:black;
+    color:white;
 }
 header {
     background:black;
@@ -21,16 +23,9 @@ header {
 .nav-pills .nav-link.active{
     background-color:black;
     color:white;
-    box-shadow:3px 3px 5px white;
 }
-.nav-link {
-    color:white;
-}
-.nav-item:hover {
-    background-color:white;
-    color:black;
-    box-shadow:3px 3px 5px white;
-}
+
+
 #profile-picture {
     float:left;
     height:auto;
@@ -65,13 +60,14 @@ header {
     padding:1%;
     margin:4%;
 }
-.portfolio-wrapper {
-    display:none;
-}
+
 .contact-nav {
     height:30px;
     width:30px;
     margin:2%;
+}
+.contact-nav:hover{
+    opacity:0.5;
 }
 .contact-tab {
     padding-top:3%;
@@ -98,5 +94,53 @@ header {
 .project-image {
     margin-bottom:2%;
 }
+
+.nav-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+  }
+  .nav-link:hover{
+      color:white;
+  }
+  
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color:white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .nav-link:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  .about-wrapper, .portfolio-wrapper {
+    opacity: 0;
+
+    -webkit-transition: opacity 2s ease-in;
+       -moz-transition: opacity 2s ease-in;
+        -ms-transition: opacity 2s ease-in;
+         -o-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
+}
+
+.about-wrapper.load, .portfolio-wrapper.load {
+    opacity: 1;
+}
+
+  
+
+
 
 
