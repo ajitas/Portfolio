@@ -74,7 +74,7 @@ header {
     height:400px;
     width:500px;
     float:left;
-    box-shadow:0 0 20px white;
+    box-shadow:0 0 10px white;
     transform: translateX(-260px);
 }
 .project-div1 {
@@ -85,7 +85,7 @@ header {
     width:350px;
     float:left;
     transform:translateX(320px) rotate(10deg);
-    box-shadow:0 0 20px white;
+    box-shadow:0 0 10px white;
 }
 
 .clearFix {
