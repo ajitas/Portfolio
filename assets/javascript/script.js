@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var topicTags = ["HTML","BootStrap","Javascript","Firebase","CSS","jQuery","APIs","AJAX","Moment.js"];
+    var topicTags = ["HTML","CSS","BootStrap","Javascript","jQuery","APIs","AJAX","Firebase","Moment.js"];
     var projects = [{
                         name:"Crystal Game",
                         topics:["HTML","CSS","Javascript","jQuery"],

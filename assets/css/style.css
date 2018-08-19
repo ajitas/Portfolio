@@ -37,7 +37,6 @@ header {
     left:2%;
     top:20%;
     height:100%;
-    margin-top:2%;
     display:none;
 }
 #button-area>div {
@@ -164,6 +163,9 @@ header {
 .project-icon {
     height:50px;
     width:50px;
+}
+.project-icon:hover {
+    opacity:0.5;
 }
 
 .card {
