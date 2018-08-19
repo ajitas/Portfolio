@@ -5,46 +5,56 @@ $(document).ready(function(){
                         name:"Crystal Game",
                         topics:["HTML","CSS","Javascript","jQuery"],
                         image:"assets/images/crystal-game.jpg",
-                        deployedLink:"https://ajitas.github.io/Crystal-Game/"
+                        deployedLink:"https://ajitas.github.io/Crystal-Game/",
+                        codeLink:"https://github.com/ajitas/Crystal-Game"
                     },
                     {
                         name:"Word Guess Game",
                         topics:["HTML","CSS","Javascript"],
                         image:"assets/images/word-guess-game.jpg",
-                        deployedLink:"https://ajitas.github.io/Word-Guess-Game/"
+                        deployedLink:"https://ajitas.github.io/Word-Guess-Game/",
+                        codeLink:"https://github.com/ajitas/Word-Guess-Game"
                     },
                     {
                         name:"Pokemon Combat Game",
                         topics:["HTML","CSS","Javascript","jQuery"],
                         image:"assets/images/pokemon-combat-game.jpg",
-                        deployedLink:"https://ajitas.github.io/Pokemon-Combat-Game/"
+                        deployedLink:"https://ajitas.github.io/Pokemon-Combat-Game/",
+                        codeLink:"https://github.com/ajitas/Pokemon-Combat-Game"
                     },
                     {
                         name:"Trivia Timed Game",
                         topics:["HTML","CSS","BootStrap","Javascript","jQuery"],
                         image:"assets/images/trivia-timed.png",
-                        deployedLink:"https://ajitas.github.io/Trivia-Timed/"
+                        deployedLink:"https://ajitas.github.io/Trivia-Timed/",
+                        codeLink:"https://github.com/ajitas/Trivia-Timed"
                     },
                     {
                         name:"Giftastic Sport",
                         topics:["HTML","CSS","BootStrap","Javascript","jQuery","APIs","AJAX"],
                         image:"assets/images/giftastic.png",
-                        deployedLink:"https://ajitas.github.io/GifTastic/"
+                        deployedLink:"https://ajitas.github.io/GifTastic/",
+                        codeLink:"https://github.com/ajitas/GifTastic"
                     },
                     {
                         name:"Train Scheduler",
                         topics:["HTML","CSS","BootStrap","Javascript","jQuery","Firebase","Moment.js"],
                         image:"assets/images/train-scheduler.png",
-                        deployedLink:"https://ajitas.github.io/Train-Scheduler/"
+                        deployedLink:"https://ajitas.github.io/Train-Scheduler/",
+                        codeLink:"https://github.com/ajitas/Train-Scheduler"
                     },]
 
     function showTopicTagButtons(){
         $("#button-area").empty();
+        $("#button-area").append("<div class='filter-by'><h4>Filter</h4></div>");
         for (var i = 0; i < topicTags.length; i++){
             var buttonTopic = $("<div>");
-            buttonTopic.text(topicTags[i]);
-            buttonTopic.attr("data-topic",topicTags[i]);
-            buttonTopic.attr("class","topic-button");
+            var aTagTopic = $("<a>")
+            buttonTopic.append(aTagTopic);
+            aTagTopic.text(topicTags[i]);
+            aTagTopic.attr("href","#");
+            aTagTopic.attr("data-topic",topicTags[i]);
+            aTagTopic.attr("class","topic-button");
             $("#button-area").append(buttonTopic);
         }
     }
@@ -54,17 +64,29 @@ $(document).ready(function(){
             var projectDiv = $("<div>");
             projectDiv.addClass("card project-div");
             projectDiv.append(`<div class="row">
-                                <div class="col-md-12 project-title text-center">
-                                    <h3>`+projects[i].name+`</h3>
-                                </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-md-12 project-image-area">
-                                    <a href=`+projects[i].deployedLink+` target="_blank"><img class="img-fluid project-image" src=`+projects[i].image+`></a>
+                                   <img class="img-fluid project-image" alt=`+projects[i].name+` src=`+projects[i].image+`>
                                 </div>
-                                
                             </div>`);
+            var projectDiv1 = $("<div>");
+            projectDiv1.append(`<div class="row">
+                                    <div class="col-md-9"></div>
+                                    <div class="col-md-3 code-link">
+                                        <a href=`+projects[i].deployedLink+` target="_blank"><img class="img-fluid project-icon" src="assets/images/play-icon.png"></a>
+                                    </div>
+                                </div>`);
+            projectDiv1.append(`<div class="row">
+                                    <div class="col-md-9"></div>
+                                    <div class="col-md-3 code-link">
+                                        <a href=`+projects[i].codeLink+` target="_blank"><img class="img-fluid project-icon" src="assets/images/github-icon.png"></a>
+                                    </div>
+                                </div>`);
+            projectDiv1.addClass("card project-div1");
+            $("#project-area").append(projectDiv1);
             $("#project-area").append(projectDiv);
+            var clearDiv = $("<div>");
+            clearDiv.addClass("clearFix");
+            $("#project-area").append(clearDiv);
         }
 
     }
@@ -76,11 +98,6 @@ $(document).ready(function(){
                 var projectDiv = $("<div>");
                 projectDiv.addClass("card project-div");
                 projectDiv.append(`<div class="row">
-                                    <div class="col-md-12 project-title text-center">
-                                        <h3>`+projects[i].name+`</h3>
-                                    </div>
-                                </div>
-                                <div class="row">
                                     <div class="col-md-12 project-image-area">
                                         <a href=`+projects[i].deployedLink+` target="_blank"><img class="img-fluid project-image" src=`+projects[i].image+`></a>
                                     </div>
@@ -91,15 +108,15 @@ $(document).ready(function(){
         }
     }
     
-    $(".about-wrapper").addClass("load");
     $(".nav-link").on("click",function(){
         if($(this).attr("id") === "about-nav"){
-            $(".about-wrapper").addClass("load");
-            $(".portfolio-wrapper").removeClass("load");
+            $(".about-wrapper1").show();
+            $(".portfolio-wrapper").hide();
         }
         else if($(this).attr("id") === "portfolio-nav"){
-            $(".about-wrapper").removeClass("load");
-            $(".portfolio-wrapper").addClass("load");
+            $(".about-wrapper1").hide();
+            $(".portfolio-wrapper").show()
+            $("#button-area").show();
             showTopicTagButtons();
             loadAllProjects();
 

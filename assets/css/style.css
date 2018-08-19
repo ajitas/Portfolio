@@ -1,5 +1,4 @@
 body {
-   /* background: url("https://juegosrev.com/wp-content/uploads/2017/06/White-HD-Wallpapers-1080p-Gallery-79-Plus-PIC-WPW40187.jpg") fixed;*/
     font-family: 'Open Sans', sans-serif;
     background:black;
     color:white;
@@ -12,25 +11,19 @@ header {
     left:0%;
     z-index:1;
 }
-.header-name {
-    color:white;
-    text-align:center;
-}
 
 .header-tab {
-    padding-top:3%;
+    padding-top:1%;
 }
-.nav-pills .nav-link.active{
+.nav-pills{
     background-color:black;
     color:white;
 }
 
-
 #profile-picture {
-    float:left;
     height:auto;
-    width:20%;
-    padding-right:2%;
+    width:60%;
+    margin-bottom:80px;
 }
 #profile-area {
     position:absolute;
@@ -39,26 +32,29 @@ header {
     background:black;
 }
 #button-area {
-    background:black;
+    background: black;
     position:fixed;
     left:2%;
     top:20%;
     height:100%;
     margin-top:2%;
+    display:none;
+}
+#button-area>div {
+    padding:5px;
 }
 #project-area {
     position:absolute;
-    margin-left:30%;
-    margin-top:15%;
+    margin-left:20%;
+    margin-top:10%;
     color:white;
 
 }
 .topic-button {
     background-color:black;
     color:white;
-    box-shadow:3px 3px 5px white;
     padding:1%;
-    margin:4%;
+    margin-bottom:10%;
 }
 
 .contact-nav {
@@ -70,46 +66,48 @@ header {
     opacity:0.5;
 }
 .contact-tab {
-    padding-top:3%;
-}
-
-.topic-button:hover {
-    cursor:pointer;
-    background:white;
-    color:black;
+    padding-top:1%;
 }
 
 .project-div {
-    margin:2%;
-    margin-bottom:5%;
+    margin-bottom:10%;
+    height:400px;
+    width:500px;
+    float:left;
+    box-shadow:0 0 20px white;
+    transform: translateX(-260px);
 }
-
-.project-title {
-    color:white;
+.project-div1 {
+    margin-bottom:10%;
     background:black;
-    text-shadow:1px 1px 2px white;
-    padding-top:2%;
-    padding-bottom:1%;
-}
-.project-image {
-    margin-bottom:2%;
+    border:1px white solid;
+    height:350px;
+    width:350px;
+    float:left;
+    transform:translateX(320px) rotate(10deg);
+    box-shadow:0 0 20px white;
 }
 
-.nav-link {
+.clearFix {
+    clear:both;
+}
+
+.nav-link, .topic-button {
     position: relative;
     color: white;
     text-decoration: none;
   }
-  .nav-link:hover{
+  .nav-link:hover, .topic-button:hover{
       color:white;
+      text-decoration: none;
   }
   
-  .nav-link:before {
+  .nav-link:before, .topic-button:before {
     content: "";
     position: absolute;
     width: 100%;
     height: 2px;
-    bottom: -5px;
+    bottom: -1px;
     left: 0;
     background-color:white;
     visibility: hidden;
@@ -119,25 +117,72 @@ header {
     transition: all 0.3s ease-in-out 0s;
   }
   
-  .nav-link:hover:before {
+  .nav-link:hover:before, .topic-button:hover:before  {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
 
-  .about-wrapper, .portfolio-wrapper {
-    opacity: 0;
-
-    -webkit-transition: opacity 2s ease-in;
-       -moz-transition: opacity 2s ease-in;
-        -ms-transition: opacity 2s ease-in;
-         -o-transition: opacity 2s ease-in;
-            transition: opacity 2s ease-in;
+.occupation {
+    float:none;
+    color:gray;
+}
+.name {
+    float:none;
+    color:white;
+}
+.name-occupation{
+    padding-top:150px;
+}
+.about-wrapper1 {
+    padding-top:150px;
+    padding-bottom:200px;
+    
+}
+.brand-statement {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-.about-wrapper.load, .portfolio-wrapper.load {
-    opacity: 1;
+#about-picture {
+    padding-top:100px;
+    margin-left:-50px;
 }
+
+.profile {
+    -webkit-animation: fadeIn 5s; /* Safari 4+ */
+    -moz-animation:    fadeIn 5s; /* Fx 5+ */
+    -o-animation:      fadeIn 5s; /* Opera 12+ */
+    animation:         fadeIn 5s; /* IE 10+, Fx 29+ */
+}
+
+.code-link {
+    padding:5px;
+}
+.project-icon {
+    height:50px;
+    width:50px;
+}
+
+.card {
+    border:gray;
+}
+
+/*.project-image-area { 
+    display: inline-block; 
+    overflow: hidden; 
+  }
+  .project-image-area img {
+    display: block;
+    transition: .3s ease-in-out;
+  }
+  .project-image-area:hover img {
+    transform: scale(1.3);
+  }
+  */
+
+
+
 
   
 
