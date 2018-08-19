@@ -68,6 +68,9 @@ header {
 .contact-tab {
     padding-top:1%;
 }
+.contact-tab>a {
+    color:black;
+}
 
 .project-div {
     margin-bottom:10%;
