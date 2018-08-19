@@ -58,8 +58,8 @@ header {
 }
 
 .contact-nav {
-    height:30px;
-    width:30px;
+    height:40px;
+    width:40px;
     margin:2%;
 }
 .contact-nav:hover{
@@ -100,6 +100,9 @@ header {
     color: white;
     text-decoration: none;
   }
+  .nav-link {
+      font-size:24px;
+  }
   .nav-link:hover, .topic-button:hover{
       color:white;
       text-decoration: none;
@@ -139,7 +142,6 @@ header {
 }
 .about-wrapper1 {
     padding-top:150px;
-    padding-bottom:200px;
     
 }
 .brand-statement {
