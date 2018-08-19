@@ -58,8 +58,8 @@ header {
 }
 
 .contact-nav {
-    height:40px;
-    width:40px;
+    height:30px;
+    width:30px;
     margin:2%;
 }
 .contact-nav:hover{
@@ -99,9 +99,6 @@ header {
     position: relative;
     color: white;
     text-decoration: none;
-  }
-  .nav-link {
-      font-size:24px;
   }
   .nav-link:hover, .topic-button:hover{
       color:white;
