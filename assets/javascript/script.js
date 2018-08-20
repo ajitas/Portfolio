@@ -46,7 +46,7 @@ $(document).ready(function(){
 
     function showTopicTagButtons(){
         $("#button-area").empty();
-        $("#button-area").append("<div class='filter-by'><h4>Filter</h4></div>");
+        $("#button-area").append("<div class='filter-by'><h4>Filter <i class='fas fa-arrow-alt-circle-down'></i></h4></div>");
         for (var i = 0; i < topicTags.length; i++){
             var buttonTopic = $("<div>");
             var aTagTopic = $("<a>")
