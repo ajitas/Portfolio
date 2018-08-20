@@ -87,33 +87,6 @@ $(document).ready(function(){
             projectLineDiv.append(projectDiv1);
             projectLineDiv.append(projectDiv);
             $("#project-area").append(projectLineDiv);
-
-            /*var projectDiv = $("<div>");
-            projectDiv.addClass("card project-div");
-            projectDiv.append(`<div class="row">
-                                <div class="col-md-12 project-image-area">
-                                   <img class="img-fluid project-image" alt=`+projects[i].name+` src=`+projects[i].image+`>
-                                </div>
-                            </div>`);
-            var projectDiv1 = $("<div>");
-            projectDiv1.append(`<div class="row">
-                                    <div class="col-md-9"></div>
-                                    <div class="col-md-3 code-link">
-                                        <a href=`+projects[i].deployedLink+` target="_blank"><img class="img-fluid project-icon" src="assets/images/play-icon.png"></a>
-                                    </div>
-                                </div>`);
-            projectDiv1.append(`<div class="row">
-                                    <div class="col-md-9"></div>
-                                    <div class="col-md-3 code-link">
-                                        <a href=`+projects[i].codeLink+` target="_blank"><img class="img-fluid project-icon" src="assets/images/github-icon.png"></a>
-                                    </div>
-                                </div>`);
-            projectDiv1.addClass("card project-div1");
-            $("#project-area").append(projectDiv1);
-            $("#project-area").append(projectDiv);
-            var clearDiv = $("<div>");
-            clearDiv.addClass("clearFix");
-            $("#project-area").append(clearDiv);*/
         }
 
     }
@@ -122,6 +95,8 @@ $(document).ready(function(){
         $("#project-area").empty();
         for(var i =0;i<projects.length ;i++){
             if(projects[i].topics.indexOf(tag) !== -1){
+                var projectLineDiv = $("<div>");
+                projectLineDiv.addClass("project-line");
                 var projectDiv = $("<div>");
                 projectDiv.addClass("card project-div");
                 projectDiv.append(`<div class="row">
@@ -143,11 +118,9 @@ $(document).ready(function(){
                                         </div>
                                     </div>`);
                 projectDiv1.addClass("card project-div1");
-                $("#project-area").append(projectDiv1);
-                $("#project-area").append(projectDiv);
-                var clearDiv = $("<div>");
-                clearDiv.addClass("clearFix");
-                $("#project-area").append(clearDiv);
+                projectLineDiv.append(projectDiv1);
+                projectLineDiv.append(projectDiv);
+                $("#project-area").append(projectLineDiv);
             }
         }
     }
