@@ -43,12 +43,12 @@ header {
     padding:5px;
 }
 #project-area {
-    position:absolute;
     margin-left:20%;
-    margin-top:10%;
+    margin-top:15%;
     color:white;
 
 }
+
 .topic-button {
     background-color:black;
     color:white;
@@ -66,34 +66,43 @@ header {
 }
 .contact-tab {
     padding-top:1%;
+    text-align:center;
 }
 .contact-tab>a {
     color:black;
 }
 
 .project-div {
+    display:flex;
+    position:relative;
+    left:-20vw;
+    top:5vh;
+    flex-direction: column;
     margin-bottom:10%;
-    height:400px;
-    width:500px;
-    float:left;
+    height:auto;
+    width:40vw;
     box-shadow:0 0 10px white;
-    transform: translateX(-260px);
 }
 .project-div1 {
+    display:flex;
+    position:relative;
+    left:22vw;
+    top:5vh;
+    flex-direction: column;
     margin-bottom:10%;
     background:black;
     border:1px white solid;
-    height:350px;
-    width:350px;
-    float:left;
-    transform:translateX(320px) rotate(10deg);
+    height:auto;
+    width:30vw;
+    transform: rotate(10deg);
     box-shadow:0 0 10px white;
 }
 
-.clearFix {
-    clear:both;
+.project-line {
+    display:flex;
+    justify-content: center;
+    position:relative;
 }
-
 .nav-link, .topic-button {
     position: relative;
     color: white;
@@ -135,6 +144,7 @@ header {
 }
 .name-occupation{
     padding-top:150px;
+    text-align:center;
 }
 .about-wrapper1 {
     padding-top:150px;
@@ -158,11 +168,16 @@ header {
 }
 
 .code-link {
-    padding:5px;
+text-align:right;
+
 }
 .project-icon {
-    height:50px;
-    width:50px;
+    height:auto;
+    width:100%;
+    padding-bottom:10px;
+    padding-right:10px;
+    padding-top:5px;
+
 }
 .project-icon:hover {
     opacity:0.5;
@@ -171,19 +186,50 @@ header {
 .card {
     border:gray;
 }
+.project-image {
+    height:auto;
+    width:100%;
+}
 
-/*.project-image-area { 
-    display: inline-block; 
-    overflow: hidden; 
+ @media screen and (max-width: 768px) {
+.project-div1 {
+    height:208px;
+    transform:translateX(50px) rotate(10deg);
+   
+}
+.project-div {
+   
+    height:208px;
+} 
+ 
+.project-icon {
+    width:50px;
+    height:55px;
+}
+.project-image {
+    height:208px;
+}
+ }
+
+ @media screen and (max-width: 575px) {
+#project-area {
+    margin-top:20%;
+} 
+.project-image {
+    height:140px; 
   }
-  .project-image-area img {
-    display: block;
-    transition: .3s ease-in-out;
-  }
-  .project-image-area:hover img {
-    transform: scale(1.3);
-  }
-  */
+  .project-div {
+   
+    height:140px;
+} 
+.project-div1 {
+    height:140px;}
+}
+@media screen and (max-width: 375px) {
+    #project-area {
+        margin-top:25%;
+    } 
+}
 
 
 
