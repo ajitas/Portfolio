@@ -81,7 +81,6 @@ header {
     margin-bottom:10%;
     height:auto;
     width:40vw;
-    box-shadow:0 0 10px white;
 }
 .project-div1 {
     display:flex;
@@ -189,6 +188,7 @@ text-align:right;
 .project-image {
     height:auto;
     width:100%;
+    box-shadow:0 0 10px white;
 }
 
  @media screen and (max-width: 980px) {
@@ -210,29 +210,13 @@ text-align:right;
 .project-line{
     top:3%;
 }
+@media screen and (max-width: 500px) {
+    
+    .project-div1{
+        left:35vw;
+        top:5vh;
+    }
 }
-
-/*
- @media screen and (max-width: 575px) {
-#project-area {
-    margin-top:20%;
-} 
-.project-image {
-    height:140px; 
-  }
-  .project-div {
-   
-    height:140px;
-} 
-.project-div1 {
-    height:140px;}
-}
-@media screen and (max-width: 375px) {
-    #project-area {
-        margin-top:25%;
-    } 
-}
-*/
 
 
 
