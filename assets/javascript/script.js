@@ -1,30 +1,30 @@
 $(document).ready(function(){
 
-    var topicTags = ["HTML","CSS","BootStrap","Javascript","jQuery","APIs","AJAX","Firebase","Moment.js"];
+    var topicTags = ["HTML","CSS","BootStrap","Javascript","jQuery","APIs","AJAX","Firebase","Moment.js","Just for Fun"];
     var projects = [{
                         name:"Crystal Game",
-                        topics:["HTML","CSS","Javascript","jQuery"],
+                        topics:["HTML","CSS","Javascript","jQuery","Just for Fun"],
                         image:"assets/images/crystal-game.jpg",
                         deployedLink:"https://ajitas.github.io/Crystal-Game/",
                         codeLink:"https://github.com/ajitas/Crystal-Game"
                     },
                     {
                         name:"Word Guess Game",
-                        topics:["HTML","CSS","Javascript"],
+                        topics:["HTML","CSS","Javascript","Just for Fun"],
                         image:"assets/images/word-guess-game.jpg",
                         deployedLink:"https://ajitas.github.io/Word-Guess-Game/",
                         codeLink:"https://github.com/ajitas/Word-Guess-Game"
                     },
                     {
                         name:"Pokemon Combat Game",
-                        topics:["HTML","CSS","Javascript","jQuery"],
+                        topics:["HTML","CSS","Javascript","jQuery","Just for Fun"],
                         image:"assets/images/pokemon-combat-game.jpg",
                         deployedLink:"https://ajitas.github.io/Pokemon-Combat-Game/",
                         codeLink:"https://github.com/ajitas/Pokemon-Combat-Game"
                     },
                     {
                         name:"Trivia Timed Game",
-                        topics:["HTML","CSS","BootStrap","Javascript","jQuery"],
+                        topics:["HTML","CSS","BootStrap","Javascript","jQuery","Just for Fun"],
                         image:"assets/images/trivia-timed.png",
                         deployedLink:"https://ajitas.github.io/Trivia-Timed/",
                         codeLink:"https://github.com/ajitas/Trivia-Timed"
@@ -42,7 +42,22 @@ $(document).ready(function(){
                         image:"assets/images/train-scheduler.png",
                         deployedLink:"https://ajitas.github.io/Train-Scheduler/",
                         codeLink:"https://github.com/ajitas/Train-Scheduler"
-                    },]
+                    },
+                    {
+                        name:"Multi-Player RPS",
+                        topics:["HTML","CSS","BootStrap","Javascript","jQuery","Firebase"],
+                        image:"assets/images/multi-rps.png",
+                        deployedLink:"https://ajitas.github.io/Multi-RPS/",
+                        codeLink:"https://github.com/ajitas/Multi-RPS"
+                    },
+                    {
+                        name:"LyriQuiz",
+                        topics:["HTML","CSS","BootStrap","Javascript","jQuery","Firebase","APIs","Moment.js"],
+                        image:"assets/images/lyriquiz.png",
+                        deployedLink:"https://ajitas.github.io/LyriQuiz/",
+                        codeLink:"https://github.com/ajitas/LyriQuiz"
+                    }
+                    ]
 
     function showTopicTagButtons(){
         $("#button-area").empty();
