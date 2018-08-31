@@ -52,7 +52,7 @@ $(document).ready(function(){
                     },
                     {
                         name:"LyriQuiz",
-                        topics:["HTML","CSS","BootStrap","Javascript","jQuery","Firebase","APIs","Moment.js"],
+                        topics:["HTML","CSS","BootStrap","Javascript","jQuery","Firebase","APIs","Moment.js","AJAX"],
                         image:"assets/images/lyriquiz.png",
                         deployedLink:"https://ajitas.github.io/LyriQuiz/",
                         codeLink:"https://github.com/ajitas/LyriQuiz"
