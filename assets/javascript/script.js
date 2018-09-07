@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var topicTags = ["HTML","CSS","BootStrap","Javascript","jQuery","APIs","AJAX","Firebase","Moment.js","Node.js","Just for Fun"];
+    var topicTags = ["HTML","CSS","BootStrap","Javascript","jQuery","APIs","AJAX","Firebase","Moment.js","Node.js","mySQL","Just for Fun"];
     var projects = [{
                         name:"Crystal Game",
                         topics:["HTML","CSS","Javascript","jQuery","Just for Fun"],
@@ -70,6 +70,13 @@ $(document).ready(function(){
                         image:"assets/images/hangman-correct.gif",
                         deployedLink:"#",
                         codeLink:"https://github.com/ajitas/Word-Guess-Game-CLI"
+                    },
+                    {
+                        name:"ShopStop-node",
+                        topics:["Javascript","Node.js","mySQL"],
+                        image:"assets/images/shopstop-customer.gif",
+                        deployedLink:"#",
+                        codeLink:"https://github.com/ajitas/ShopStop-CLI"
                     }
                     ];
 
