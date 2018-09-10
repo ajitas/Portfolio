@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var topicTags = ["HTML","CSS","BootStrap","Javascript","jQuery","APIs","AJAX","Firebase","Moment.js","Node.js","mySQL","Just for Fun"];
+    var topicTags = ["HTML","CSS","BootStrap","Javascript","jQuery","APIs","AJAX","Firebase","Moment.js","Node.js","mySQL","Express.js","Just for Fun"];
     var projects = [{
                         name:"Crystal Game",
                         topics:["HTML","CSS","Javascript","jQuery","Just for Fun"],
@@ -71,12 +71,19 @@ $(document).ready(function(){
                         deployedLink:"#",
                         codeLink:"https://github.com/ajitas/Word-Guess-Game-CLI"
                     },
-                    {
+                    {   
                         name:"ShopStop-node",
                         topics:["Javascript","Node.js","mySQL"],
-                        image:"assets/images/shopstop-customer.gif",
+                        image:"assets/images/shopstop-manager.gif",
                         deployedLink:"#",
                         codeLink:"https://github.com/ajitas/ShopStop-CLI"
+                    },
+                    {
+                        name:"Travel-Together",
+                        topics:["Javascript","Node.js","Express.js","APIs","AJAX"],
+                        image:"assets/images/travel-together-home.gif",
+                        deployedLink:"https://travel-together-1.herokuapp.com",
+                        codeLink:"https://github.com/ajitas/TravelTogether"
                     }
                     ];
 
