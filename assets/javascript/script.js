@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var topicTags = ["HTML","CSS","BootStrap","Javascript","jQuery","APIs","AJAX","Firebase","Moment.js","Node.js","mySQL","Express.js","Handlebars","MVC","Just for Fun"];
+    var topicTags = ["HTML","CSS","BootStrap","Javascript","jQuery","APIs","AJAX","Firebase","Moment.js","Node.js","mySQL","Express.js","Handlebars","MVC","Sequelize.js","Just for Fun"];
     var projects = [{
                         name:"Crystal Game",
                         topics:["HTML","CSS","Javascript","jQuery","Just for Fun"],
@@ -86,11 +86,18 @@ $(document).ready(function(){
                         codeLink:"https://github.com/ajitas/TravelTogether"
                     },
                     {
-                        name:"Restaurants_MVC",
+                        name:"Restaurants-MVC",
                         topics:["Javascript","Node.js","Express.js","AJAX","mySQL","Handlebars","MVC"],
                         image:"assets/images/restaurants_mvc.png",
                         deployedLink:"https://restaurant-list-1.herokuapp.com",
                         codeLink:"https://github.com/ajitas/Restaurants_MVC"
+                    },
+                    {
+                        name:"Restaurants-Sequelize-MVC",
+                        topics:["Javascript","Node.js","Express.js","AJAX","Sequelize.js","Handlebars","MVC"],
+                        image:"assets/images/restaurants-sequelize.png",
+                        deployedLink:"https://restaurant-sequelize-mvc.herokuapp.com/",
+                        codeLink:"https://github.com/ajitas/Restaurants_Sequelize"
                     }
                     ];
 
