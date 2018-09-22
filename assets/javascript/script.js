@@ -80,24 +80,31 @@ $(document).ready(function(){
                     },
                     {
                         name:"Travel-Together",
-                        topics:["Javascript","Node.js","Express.js","APIs","AJAX"],
+                        topics:["HTML","CSS","Javascript","jQuery","Node.js","Express.js","APIs","AJAX"],
                         image:"assets/images/travel-together-home.gif",
                         deployedLink:"https://travel-together-1.herokuapp.com",
                         codeLink:"https://github.com/ajitas/TravelTogether"
                     },
                     {
                         name:"Restaurants-MVC",
-                        topics:["Javascript","Node.js","Express.js","AJAX","mySQL","Handlebars","MVC"],
+                        topics:["HTML","CSS","Javascript","jQuery","Node.js","Express.js","AJAX","mySQL","Handlebars","MVC"],
                         image:"assets/images/restaurants_mvc.png",
                         deployedLink:"https://restaurant-list-1.herokuapp.com",
                         codeLink:"https://github.com/ajitas/Restaurants_MVC"
                     },
                     {
                         name:"Restaurants-Sequelize-MVC",
-                        topics:["Javascript","Node.js","Express.js","AJAX","Sequelize.js","Handlebars","MVC"],
+                        topics:["HTML","CSS","Javascript","jQuery","Node.js","Express.js","AJAX","Sequelize.js","Handlebars","MVC"],
                         image:"assets/images/restaurants-sequelize.png",
                         deployedLink:"https://restaurant-sequelize-mvc.herokuapp.com/",
                         codeLink:"https://github.com/ajitas/Restaurants_Sequelize"
+                    },
+                    {
+                        name:"CodeMason",
+                        topics:["HTML","CSS","Javascript","jQuery","Node.js","Express.js","AJAX","Sequelize.js","MVC"],
+                        image:"assets/images/code-mason.png",
+                        deployedLink:"https://code-mason.herokuapp.com/",
+                        codeLink:"https://github.com/ajitas/Code-Mason"
                     }
                     ];
 

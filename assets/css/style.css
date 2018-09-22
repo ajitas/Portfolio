@@ -34,6 +34,8 @@ header {
 #button-area {
     background: black;
     position:fixed;
+    max-height:75vh;
+    overflow:scroll;
     left:2%;
     top:20%;
     height:100%;
