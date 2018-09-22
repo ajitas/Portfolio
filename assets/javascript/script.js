@@ -1,61 +1,61 @@
 $(document).ready(function(){
 
-    var topicTags = ["HTML","CSS","BootStrap","Javascript","jQuery","APIs","AJAX","Firebase","Moment.js","Node.js","mySQL","Express.js","Handlebars","MVC","Sequelize.js","Just for Fun"];
+    var topicTags = ["HTML5","CSS3","BootStrap","Javascript","jQuery","APIs","AJAX","Firebase","Moment.js","Node.js","mySQL","Express.js","Handlebars","MVC","Sequelize.js","Just for Fun"];
     var projects = [{
-                        name:"Crystal Game",
-                        topics:["HTML","CSS","Javascript","jQuery","Just for Fun"],
-                        image:"assets/images/crystal-game.png",
-                        deployedLink:"https://ajitas.github.io/Crystal-Game/",
-                        codeLink:"https://github.com/ajitas/Crystal-Game"
+                        name:"CodeMason",
+                        topics:["HTML5","CSS3","Javascript","jQuery","Node.js","Express.js","AJAX","Sequelize.js","MVC"],
+                        image:"assets/images/code-mason.png",
+                        deployedLink:"https://code-mason.herokuapp.com/",
+                        codeLink:"https://github.com/ajitas/Code-Mason"
                     },
                     {
-                        name:"Word Guess Game",
-                        topics:["HTML","CSS","Javascript","Just for Fun"],
-                        image:"assets/images/word-guess-game.png",
-                        deployedLink:"https://ajitas.github.io/Word-Guess-Game/",
-                        codeLink:"https://github.com/ajitas/Word-Guess-Game"
+                        name:"Restaurants-Sequelize-MVC",
+                        topics:["HTML5","CSS3","Javascript","jQuery","Node.js","Express.js","AJAX","Sequelize.js","Handlebars","MVC"],
+                        image:"assets/images/restaurants-sequelize.png",
+                        deployedLink:"https://restaurant-sequelize-mvc.herokuapp.com/",
+                        codeLink:"https://github.com/ajitas/Restaurants_Sequelize"
                     },
                     {
-                        name:"Pokemon Combat Game",
-                        topics:["HTML","CSS","Javascript","jQuery","Just for Fun"],
-                        image:"assets/images/pokemon-combat-game.png",
-                        deployedLink:"https://ajitas.github.io/Pokemon-Combat-Game/",
-                        codeLink:"https://github.com/ajitas/Pokemon-Combat-Game"
+                        name:"Multi-Player RPS",
+                        topics:["HTML5","CSS3","BootStrap","Javascript","jQuery","Firebase"],
+                        image:"assets/images/multi-rps.png",
+                        deployedLink:"https://ajitas.github.io/Multi-RPS/",
+                        codeLink:"https://github.com/ajitas/Multi-RPS"
                     },
                     {
                         name:"Trivia Timed Game",
-                        topics:["HTML","CSS","BootStrap","Javascript","jQuery"],
+                        topics:["HTML5","CSS3","BootStrap","Javascript","jQuery"],
                         image:"assets/images/trivia-timed.png",
                         deployedLink:"https://ajitas.github.io/Trivia-Timed/",
                         codeLink:"https://github.com/ajitas/Trivia-Timed"
                     },
                     {
+                        name:"LyriQuiz",
+                        topics:["HTML5","CSS3","BootStrap","Javascript","jQuery","Firebase","APIs","Moment.js","AJAX"],
+                        image:"assets/images/lyriquiz.png",
+                        deployedLink:"https://ajitas.github.io/LyriQuiz/",
+                        codeLink:"https://github.com/ajitas/LyriQuiz"
+                    },
+                    {   
+                        name:"ShopStop-node",
+                        topics:["Javascript","Node.js","mySQL"],
+                        image:"assets/images/shopstop-manager.gif",
+                        deployedLink:"#",
+                        codeLink:"https://github.com/ajitas/ShopStop-CLI"
+                    },
+                    {
                         name:"Giftastic Sport",
-                        topics:["HTML","CSS","BootStrap","Javascript","jQuery","APIs","AJAX"],
+                        topics:["HTML5","CSS3","BootStrap","Javascript","jQuery","APIs","AJAX"],
                         image:"assets/images/giftastic.png",
                         deployedLink:"https://ajitas.github.io/GifTastic/",
                         codeLink:"https://github.com/ajitas/GifTastic"
                     },
                     {
                         name:"Train Scheduler",
-                        topics:["HTML","CSS","BootStrap","Javascript","jQuery","Firebase","Moment.js"],
+                        topics:["HTML5","CSS3","BootStrap","Javascript","jQuery","Firebase","Moment.js"],
                         image:"assets/images/train-scheduler.png",
                         deployedLink:"https://ajitas.github.io/Train-Scheduler/",
                         codeLink:"https://github.com/ajitas/Train-Scheduler"
-                    },
-                    {
-                        name:"Multi-Player RPS",
-                        topics:["HTML","CSS","BootStrap","Javascript","jQuery","Firebase"],
-                        image:"assets/images/multi-rps.png",
-                        deployedLink:"https://ajitas.github.io/Multi-RPS/",
-                        codeLink:"https://github.com/ajitas/Multi-RPS"
-                    },
-                    {
-                        name:"LyriQuiz",
-                        topics:["HTML","CSS","BootStrap","Javascript","jQuery","Firebase","APIs","Moment.js","AJAX"],
-                        image:"assets/images/lyriquiz.png",
-                        deployedLink:"https://ajitas.github.io/LyriQuiz/",
-                        codeLink:"https://github.com/ajitas/LyriQuiz"
                     },
                     {
                         name:"LIRIBot-node",
@@ -71,40 +71,40 @@ $(document).ready(function(){
                         deployedLink:"#",
                         codeLink:"https://github.com/ajitas/Word-Guess-Game-CLI"
                     },
-                    {   
-                        name:"ShopStop-node",
-                        topics:["Javascript","Node.js","mySQL"],
-                        image:"assets/images/shopstop-manager.gif",
-                        deployedLink:"#",
-                        codeLink:"https://github.com/ajitas/ShopStop-CLI"
-                    },
                     {
                         name:"Travel-Together",
-                        topics:["HTML","CSS","Javascript","jQuery","Node.js","Express.js","APIs","AJAX"],
+                        topics:["HTML5","CSS3","Javascript","jQuery","Node.js","Express.js","APIs","AJAX"],
                         image:"assets/images/travel-together-home.gif",
                         deployedLink:"https://travel-together-1.herokuapp.com",
                         codeLink:"https://github.com/ajitas/TravelTogether"
                     },
                     {
                         name:"Restaurants-MVC",
-                        topics:["HTML","CSS","Javascript","jQuery","Node.js","Express.js","AJAX","mySQL","Handlebars","MVC"],
+                        topics:["HTML5","CSS3","Javascript","jQuery","Node.js","Express.js","AJAX","mySQL","Handlebars","MVC"],
                         image:"assets/images/restaurants_mvc.png",
                         deployedLink:"https://restaurant-list-1.herokuapp.com",
                         codeLink:"https://github.com/ajitas/Restaurants_MVC"
                     },
                     {
-                        name:"Restaurants-Sequelize-MVC",
-                        topics:["HTML","CSS","Javascript","jQuery","Node.js","Express.js","AJAX","Sequelize.js","Handlebars","MVC"],
-                        image:"assets/images/restaurants-sequelize.png",
-                        deployedLink:"https://restaurant-sequelize-mvc.herokuapp.com/",
-                        codeLink:"https://github.com/ajitas/Restaurants_Sequelize"
+                        name:"Crystal Game",
+                        topics:["HTML5","CSS3","Javascript","jQuery","Just for Fun"],
+                        image:"assets/images/crystal-game.png",
+                        deployedLink:"https://ajitas.github.io/Crystal-Game/",
+                        codeLink:"https://github.com/ajitas/Crystal-Game"
                     },
                     {
-                        name:"CodeMason",
-                        topics:["HTML","CSS","Javascript","jQuery","Node.js","Express.js","AJAX","Sequelize.js","MVC"],
-                        image:"assets/images/code-mason.png",
-                        deployedLink:"https://code-mason.herokuapp.com/",
-                        codeLink:"https://github.com/ajitas/Code-Mason"
+                        name:"Word Guess Game",
+                        topics:["HTML5","CSS3","Javascript","Just for Fun"],
+                        image:"assets/images/word-guess-game.png",
+                        deployedLink:"https://ajitas.github.io/Word-Guess-Game/",
+                        codeLink:"https://github.com/ajitas/Word-Guess-Game"
+                    },
+                    {
+                        name:"Pokemon Combat Game",
+                        topics:["HTML5","CSS3","Javascript","jQuery","Just for Fun"],
+                        image:"assets/images/pokemon-combat-game.png",
+                        deployedLink:"https://ajitas.github.io/Pokemon-Combat-Game/",
+                        codeLink:"https://github.com/ajitas/Pokemon-Combat-Game"
                     }
                     ];
 
