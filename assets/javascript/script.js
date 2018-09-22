@@ -223,10 +223,12 @@ $(document).ready(function(){
     $(".nav-link").on("click",function(){
         if($(this).attr("id") === "about-nav"){
             $(".about-wrapper1").show();
+            $(".about-wrapper2").show();
             $(".portfolio-wrapper").hide();
         }
         else if($(this).attr("id") === "portfolio-nav"){
             $(".about-wrapper1").hide();
+            $(".about-wrapper2").hide();
             $(".portfolio-wrapper").show()
             $("#button-area").show();
             showTopicTagButtons();

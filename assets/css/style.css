@@ -148,12 +148,14 @@ header {
     text-align:center;
 }
 .about-wrapper1 {
-    padding-top:150px;
-    
+    padding-top:150px; 
 }
 .brand-statement {
     text-align: justify;
     text-justify: inter-word;
+    padding-left:250px;
+    padding-right:250px;
+    font-size:18px;
 }
 
 #about-picture {
