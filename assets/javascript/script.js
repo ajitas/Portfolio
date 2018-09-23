@@ -10,7 +10,7 @@ $(document).ready(function(){
                     },
                     {
                         name:"Restaurants-Sequelize-MVC",
-                        topics:["HTML5","CSS3","Javascript","jQuery","Node.js","Express.js","AJAX","Sequelize.js","Handlebars","MVC"],
+                        topics:["HTML5","CSS3","BootStrap","Javascript","jQuery","Node.js","Express.js","AJAX","Sequelize.js","Handlebars","MVC"],
                         image:"assets/images/restaurants-sequelize.png",
                         deployedLink:"https://restaurant-sequelize-mvc.herokuapp.com/",
                         codeLink:"https://github.com/ajitas/Restaurants_Sequelize"
@@ -21,6 +21,13 @@ $(document).ready(function(){
                         image:"assets/images/multi-rps.png",
                         deployedLink:"https://ajitas.github.io/Multi-RPS/",
                         codeLink:"https://github.com/ajitas/Multi-RPS"
+                    },
+                    {
+                        name:"CoolTool",
+                        topics:["HTML5","CSS3","Javascript","jQuery","BootStrap"],
+                        image:"assets/images/cooltool.png",
+                        deployedLink:"https://ajitas.github.io/CoolTool/",
+                        codeLink:"https://github.com/ajitas/CoolTool"
                     },
                     {
                         name:"Trivia Timed Game",
@@ -73,14 +80,14 @@ $(document).ready(function(){
                     },
                     {
                         name:"Travel-Together",
-                        topics:["HTML5","CSS3","Javascript","jQuery","Node.js","Express.js","APIs","AJAX"],
+                        topics:["HTML5","CSS3","BootStrap","Javascript","jQuery","Node.js","Express.js","APIs","AJAX"],
                         image:"assets/images/travel-together-home.gif",
                         deployedLink:"https://travel-together-1.herokuapp.com",
                         codeLink:"https://github.com/ajitas/TravelTogether"
                     },
                     {
                         name:"Restaurants-MVC",
-                        topics:["HTML5","CSS3","Javascript","jQuery","Node.js","Express.js","AJAX","mySQL","Handlebars","MVC"],
+                        topics:["HTML5","CSS3","BootStrap","Javascript","jQuery","Node.js","Express.js","AJAX","mySQL","Handlebars","MVC"],
                         image:"assets/images/restaurants_mvc.png",
                         deployedLink:"https://restaurant-list-1.herokuapp.com",
                         codeLink:"https://github.com/ajitas/Restaurants_MVC"
