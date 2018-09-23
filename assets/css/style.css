@@ -153,8 +153,8 @@ header {
 .brand-statement {
     text-align: justify;
     text-justify: inter-word;
-    padding-left:250px;
-    padding-right:250px;
+    padding-left:15vw;
+    padding-right:15vw;
     font-size:18px;
 }
 
