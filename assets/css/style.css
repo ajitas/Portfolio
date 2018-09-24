@@ -239,6 +239,9 @@ text-align:right;
         left:35vw;
         top:5vh;
     }
+    #button-area {
+        padding-right:10px;
+    }
 }
 
 
