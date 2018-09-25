@@ -232,15 +232,22 @@ $(document).ready(function(){
             $(".about-wrapper1").show();
             $(".about-wrapper2").show();
             $(".portfolio-wrapper").hide();
+            $(".blog-wrapper").hide();
         }
         else if($(this).attr("id") === "portfolio-nav"){
             $(".about-wrapper1").hide();
             $(".about-wrapper2").hide();
-            $(".portfolio-wrapper").show()
+            $(".blog-wrapper").hide();
+            $(".portfolio-wrapper").show();
             $("#button-area").show();
             showTopicTagButtons();
             loadAllProjects();
-
+        }
+        else if($(this).attr("id") === "post-nav"){
+            $(".about-wrapper1").hide();
+            $(".about-wrapper2").hide();
+            $(".portfolio-wrapper").hide();
+            $(".blog-wrapper").show();
         }
     });
 

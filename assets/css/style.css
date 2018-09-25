@@ -19,6 +19,10 @@ header {
     background-color:black;
     color:white;
 }
+.blog-link {
+    color:white;
+    text-decoration:none;
+}
 
 #profile-picture {
     height:auto;
@@ -104,17 +108,17 @@ header {
     justify-content: center;
     position:relative;
 }
-.nav-link, .topic-button {
+.nav-link, .topic-button, .blog-link {
     position: relative;
     color: white;
     text-decoration: none;
   }
-  .nav-link:hover, .topic-button:hover{
+  .nav-link:hover, .topic-button:hover, .blog-link:hover{
       color:white;
       text-decoration: none;
   }
   
-  .nav-link:before, .topic-button:before {
+  .nav-link:before, .topic-button:before, .blog-link:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -129,7 +133,7 @@ header {
     transition: all 0.3s ease-in-out 0s;
   }
   
-  .nav-link:hover:before, .topic-button:hover:before  {
+  .nav-link:hover:before, .topic-button:hover:before, .blog-link:hover:before  {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -204,6 +208,16 @@ text-align:right;
     box-shadow:0 0 10px white;
     font-size:25px;
 }
+.blog-wrapper{
+    padding-top:150px;
+    display:none;
+}
+.single-blog {
+    padding:10px;
+    background:rgba(111, 104, 104, 0.53);
+    margin-top:10px;
+}
+
 
  @media screen and (max-width: 980px) {
 
