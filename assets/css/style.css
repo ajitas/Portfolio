@@ -233,6 +233,7 @@ text-align:right;
 .project-heading {
     font-size:15px;
 }
+}
 @media screen and (max-width: 500px) {
     
     .project-div1{
@@ -243,12 +244,3 @@ text-align:right;
         padding-right:10px;
     }
 }
-
-
-
-
-  
-
-
-
-
