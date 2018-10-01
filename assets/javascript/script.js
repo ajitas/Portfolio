@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var topicTags = ["HTML5","CSS3","BootStrap","Javascript","jQuery","APIs","AJAX","Firebase","Moment.js","Node.js","mySQL","Express.js","Handlebars","MVC","Sequelize.js","Just for Fun"];
+    var topicTags = ["HTML5","CSS3","BootStrap","Javascript","jQuery","APIs","AJAX","Firebase","Moment.js","Node.js","React.js","mySQL","MongoDB","Express.js","Handlebars","MVC","Sequelize.js","Just for Fun"];
     var projects = [{
                         name:"CodeMason",
                         topics:["HTML5","CSS3","Javascript","jQuery","Node.js","Express.js","AJAX","Sequelize.js","MVC"],
@@ -9,11 +9,25 @@ $(document).ready(function(){
                         codeLink:"https://github.com/ajitas/Code-Mason"
                     },
                     {
-                        name:"Restaurants-Sequelize-MVC",
+                        name:"Recipes Scraper",
+                        topics:["HTML5","CSS3","Javascript","jQuery","Node.js","Express.js","AJAX","MongoDB","MVC"],
+                        image:"assets/images/recipe-scraper.png",
+                        deployedLink:"https://kitchen-scraper.herokuapp.com/",
+                        codeLink:"https://github.com/ajitas/Recipes-Scraper"
+                    },
+                    {
+                        name:"Restaurants Sequelize MVC",
                         topics:["HTML5","CSS3","BootStrap","Javascript","jQuery","Node.js","Express.js","AJAX","Sequelize.js","Handlebars","MVC"],
                         image:"assets/images/restaurants-sequelize.png",
                         deployedLink:"https://restaurant-sequelize-mvc.herokuapp.com/",
                         codeLink:"https://github.com/ajitas/Restaurants_Sequelize"
+                    },
+                    {
+                        name:"Clicky Game React",
+                        topics:["HTML5","CSS3","BootStrap","Javascript","React.js"],
+                        image:"assets/images/clicky-game-react.png",
+                        deployedLink:"https://ajitas.github.io/Clicky-Game-React/",
+                        codeLink:"https://github.com/ajitas/Clicky-Game-React"
                     },
                     {
                         name:"Multi-Player RPS",
@@ -44,7 +58,7 @@ $(document).ready(function(){
                         codeLink:"https://github.com/ajitas/LyriQuiz"
                     },
                     {   
-                        name:"ShopStop-node",
+                        name:"ShopStop node",
                         topics:["Javascript","Node.js","mySQL"],
                         image:"assets/images/shopstop-manager.gif",
                         deployedLink:"#",
@@ -65,28 +79,28 @@ $(document).ready(function(){
                         codeLink:"https://github.com/ajitas/Train-Scheduler"
                     },
                     {
-                        name:"LIRIBot-node",
+                        name:"LIRIBot node",
                         topics:["Javascript","Node.js","APIs","Moment.js"],
                         image:"assets/images/liri.gif",
                         deployedLink:"#",
                         codeLink:"https://github.com/ajitas/liri-node-app"
                     },
                     {
-                        name:"Hangman-node",
+                        name:"Hangman node",
                         topics:["Javascript","Node.js"],
                         image:"assets/images/hangman-correct.gif",
                         deployedLink:"#",
                         codeLink:"https://github.com/ajitas/Word-Guess-Game-CLI"
                     },
                     {
-                        name:"Travel-Together",
+                        name:"Travel Together",
                         topics:["HTML5","CSS3","BootStrap","Javascript","jQuery","Node.js","Express.js","APIs","AJAX"],
                         image:"assets/images/travel-together-home.gif",
                         deployedLink:"https://travel-together-1.herokuapp.com",
                         codeLink:"https://github.com/ajitas/TravelTogether"
                     },
                     {
-                        name:"Restaurants-MVC",
+                        name:"Restaurants MVC",
                         topics:["HTML5","CSS3","BootStrap","Javascript","jQuery","Node.js","Express.js","AJAX","mySQL","Handlebars","MVC"],
                         image:"assets/images/restaurants_mvc.png",
                         deployedLink:"https://restaurant-list-1.herokuapp.com",
